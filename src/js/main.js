@@ -6,15 +6,15 @@
 
  * Если мы хотим добавить модуль следует его раскомментировать
  */
-// import MousePRLX from './libs/parallaxMouse'
-// import AOS from 'aos'
+import MousePRLX from './libs/parallaxMouse'
+import AOS from 'aos'
 // import Swiper, { Navigation, Pagination } from 'swiper';
 
 import BaseHelpers from './helpers/BaseHelpers';
-import PopupManager from './modules/PopupManager';
+// import PopupManager from './modules/PopupManager';
 import BurgerMenu from './modules/BurgerMenu';
-import Tabs from './modules/Tabs';
-import Accordion from './modules/Accordion';
+// import Tabs from './modules/Tabs';
+// import Accordion from './modules/Accordion';
 
 BaseHelpers.checkWebpSupport();
 
@@ -33,7 +33,7 @@ BaseHelpers.headerFixed();
  * На обертку(.popup) окна добавь атрибут '[data-close-overlay]'
  * На кнопку для закрытия окна добавь класс '.button-close'
  * */
-new PopupManager();
+// new PopupManager();
 
 /**
  *  Модуль для работы с меню (Бургер)
@@ -44,21 +44,21 @@ new BurgerMenu().init();
  *  Библиотека для анимаций
  *  документация: https://michalsnik.github.io/aos
  * */
-// AOS.init();
+AOS.init();
 
 /**
  * Параллакс мышей
  * */
-// new MousePRLX();
+new MousePRLX();
 
-new Tabs('tabs-example', {
-	onChange: (data) => {
-		console.log(data);
-	},
-});
+// new Tabs('tabs-example', {
+// 	onChange: (data) => {
+// 		console.log(data);
+// 	},
+// });
 
-new Accordion('.accordion', {
-	shouldOpenAll: false, // true
-	defaultOpen: [], // [0,1]
-	collapsedClass: 'open',
-});
+// new Accordion('.accordion', {
+// 	shouldOpenAll: false, // true
+// 	defaultOpen: [], // [0,1]
+// 	collapsedClass: 'open',
+// });

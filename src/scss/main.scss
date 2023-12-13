@@ -22,7 +22,7 @@
 * Библиотеки
 * раскомментировать для использования
 */
-// @import 'libs/aos';
+@import 'libs/aos';
 // @import 'libs/swiper';
 
 /**
@@ -40,6 +40,8 @@
 */
 @import 'config/common';
 
+@import 'config/fullscreen';
+@import 'config/keyframes';
 /**
 * Подключение стилей отдельных блоков и секций
 */
@@ -49,3 +51,5 @@
 @import 'components/tabs';
 @import 'components/accordion';
 @import 'components/footer';
+
+@import 'section/hero';
