@@ -13,6 +13,8 @@ import AOS from 'aos'
 import BaseHelpers from './helpers/BaseHelpers';
 // import PopupManager from './modules/PopupManager';
 import BurgerMenu from './modules/BurgerMenu';
+import bgAnimation from './section/bgAnimation';
+import slider from './section/slider';
 // import Tabs from './modules/Tabs';
 // import Accordion from './modules/Accordion';
 
@@ -62,3 +64,17 @@ new MousePRLX();
 // 	defaultOpen: [], // [0,1]
 // 	collapsedClass: 'open',
 // });
+
+
+
+const heroEffect = document.querySelectorAll('.hero__effects linearGradient');
+heroEffect ? bgAnimation(heroEffect) : null
+
+const sliderBlock = document.querySelector('.values__container');
+sliderBlock ? slider(sliderBlock) : null;
+
+
+const chatbotLeftEffect = document.querySelectorAll('.chatbot__bg-left linearGradient');
+const chatbotRightEffect = document.querySelectorAll('.chatbot__bg-right linearGradient');
+chatbotLeftEffect ? bgAnimation(chatbotLeftEffect) : null
+chatbotRightEffect ? bgAnimation(chatbotRightEffect) : null

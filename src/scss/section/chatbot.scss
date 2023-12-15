@@ -1,0 +1,105 @@
+.chatbot {
+  position: relative;
+  padding-top: rem(164);
+
+  @include media-mx(992) {
+    padding-top: rem(82);
+  }
+
+  &__bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+
+    svg {
+      width: 100%;
+      height: auto;
+
+      linearGradient {
+        display: none;
+
+        &.active {
+          display: block;
+        }
+      }
+    }
+  }
+
+  &__bg-left {
+    position: absolute;
+    top: rem(-220);
+    z-index: -1;
+    left: 0;
+    width: 28vw;
+
+    @include media-mx(992) {
+      top: rem(-60);
+      width: 48%;
+    }
+  }
+
+  &__bg-right {
+    position: absolute;
+    top: rem(66);
+    right: 0;
+    z-index: -1;
+    width: 60.5vw;
+
+    @include media-mx(992) {
+      top: rem(350);
+      left: -15%;
+      right: 0;
+      width: 115%;
+      margin: 0 auto;
+      display: flex;
+    }
+  }
+
+
+  &__content {
+    padding-top: rem(40);
+
+    @include media-mx(992) {
+      padding-top: 0;
+    }
+  }
+
+  &__header {
+    justify-content: center;
+    margin: 0 auto rem(135);
+
+    @include media-mx(992) {
+      margin-bottom: rem(30);
+    }
+  }
+
+  &__image {
+    max-width: rem(568);
+    position: relative;
+
+    &:before {
+      content: "";
+      background-image: url('@img/hero__image-effect.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      top: 0%;
+      bottom: 0%;
+      right: 0%;
+      left: 0%;
+      z-index: 2;
+    }
+  }
+
+  &__footer {
+    margin-top: rem(235);
+    display: flex;
+
+
+  }
+}
