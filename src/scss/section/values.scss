@@ -1,5 +1,33 @@
 .values {
   padding-top: rem(220);
+  position: relative;
+
+  &::before,
+  &:after {
+    content: "";
+    border-radius: 50%;
+    opacity: 0.15;
+    background: #940DFF;
+    filter: blur(200px);
+    width: 753px;
+    height: 664px;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+
+    transform: translateY(50%);
+  }
+
+  &::before {
+    left: -30%;
+  }
+
+  &:after {
+    right: -30%;
+  }
 
   @include media-mx(992) {
     padding-top: rem(180);
@@ -68,6 +96,11 @@
     .purple & {
       background: #940DFF;
     }
+
+    @include media-mx(992) {
+      width: 130px !important;
+      height: 130px !important;
+    }
   }
 
   &__box-img {
@@ -99,6 +132,10 @@
     align-items: center;
     justify-content: center;
     gap: rem(10);
+
+    @include media-mn(993) {
+      display: none;
+    }
 
     .swiper-pagination-bullet {
       border-radius: 50%;

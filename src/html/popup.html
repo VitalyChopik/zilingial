@@ -1,0 +1,177 @@
+<div class="popup">
+  <div class="popup__wrapper"></div>
+  <div class="popup__container">
+    <div class="popup__block">
+      <div class="popup__image"><img src="@img/popup.svg" alt=""></div>
+      <div class="popup__content">
+        <div class="popup__close">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <g clip-path="url(#clip0_2380_10382)">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M8 9.41466L11.5353 12.95C11.7229 13.1376 11.9774 13.243 12.2427 13.243C12.508 13.243 12.7624 13.1376 12.95 12.95C13.1376 12.7624 13.243 12.508 13.243 12.2427C13.243 11.9774 13.1376 11.7229 12.95 11.5353L9.41333 8L12.9493 4.46466C13.0422 4.37178 13.1158 4.26151 13.166 4.14016C13.2163 4.01881 13.2421 3.88876 13.2421 3.75743C13.2421 3.6261 13.2162 3.49605 13.1659 3.37473C13.1156 3.25341 13.0419 3.14318 12.949 3.05033C12.8561 2.95749 12.7458 2.88385 12.6245 2.83362C12.5031 2.78339 12.3731 2.75755 12.2418 2.75758C12.1104 2.75761 11.9804 2.78351 11.8591 2.8338C11.7377 2.88408 11.6275 2.95778 11.5347 3.05066L8 6.586L4.46467 3.05066C4.37247 2.95511 4.26216 2.87888 4.14018 2.82641C4.0182 2.77395 3.88699 2.7463 3.75421 2.74508C3.62144 2.74387 3.48974 2.76911 3.36683 2.81933C3.24391 2.86955 3.13222 2.94375 3.03828 3.0376C2.94435 3.13145 2.87004 3.24307 2.8197 3.36594C2.76936 3.48881 2.744 3.62048 2.74509 3.75326C2.74618 3.88604 2.7737 4.01727 2.82605 4.1393C2.87841 4.26132 2.95453 4.37171 3.05 4.464L6.58667 8L3.05067 11.536C2.9552 11.6283 2.87907 11.7387 2.82672 11.8607C2.77437 11.9827 2.74685 12.114 2.74576 12.2467C2.74467 12.3795 2.77003 12.5112 2.82037 12.6341C2.87071 12.7569 2.94501 12.8685 3.03895 12.9624C3.13289 13.0562 3.24457 13.1304 3.36749 13.1807C3.49041 13.2309 3.6221 13.2561 3.75488 13.2549C3.88766 13.2537 4.01886 13.226 4.14084 13.1736C4.26282 13.1211 4.37313 13.0449 4.46533 12.9493L8 9.41466Z"
+                fill="white" />
+            </g>
+            <defs>
+              <clipPath id="clip0_2380_10382">
+                <rect width="16" height="16" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+        <h2 class="popup__title text__gradient">Let's work together</h2>
+        <div class="popup__form">
+          <form class="contacts__form-content" enctype="multipart/form-data">
+            <input type="hidden" name="_subject" value="New submission!">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="Form" value="Contact form">
+            <input type="file" name="attachment" class="contacts__form-file-hidden" id="fileInput">
+            <div class="contacts__form-box">
+              <input type="text" name="Name" class="contacts__form-input" required autocomplete="off">
+              <span class="contacts__form-label"><img src="@img/icons/contact_user.svg" alt="">Your Name
+                <sup>*</sup></span>
+            </div>
+            <div class="contacts__form-box">
+              <input type="email" name="E-mail" class="contacts__form-input" required autocomplete="off">
+              <span class="contacts__form-label"><img src="@img/icons/contact_email.svg" alt="">Your E-mail
+                <sup>*</sup></span>
+            </div>
+            <div class="contacts__form-box">
+              <textarea name="Message" class="contacts__form-input" autocomplete="off"></textarea>
+              <span class="contacts__form-label"><img src="@img/icons/contact_message.svg" alt="">Message</span>
+            </div>
+            <div class="contacts__form-file" id="dropArea">
+
+              <div class="desktop_text">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M12.75 20.25V15.75H15.75L12 11.25L8.25 15.75H11.25V20.25H7.5V20.2125C7.374 20.22 7.254 20.25 7.125 20.25C5.63316 20.25 4.20242 19.6574 3.14752 18.6025C2.09263 17.5476 1.5 16.1168 1.5 14.625C1.5 11.739 3.6825 9.387 6.483 9.0645C6.72853 7.78094 7.41367 6.62305 8.42056 5.79C9.42745 4.95694 10.6932 4.50079 12 4.5C13.307 4.50073 14.5729 4.95683 15.5801 5.78987C16.5872 6.6229 17.2726 7.78082 17.5185 9.0645C20.319 9.387 22.4985 11.739 22.4985 14.625C22.4985 16.1168 21.9059 17.5476 20.851 18.6025C19.7961 19.6574 18.3653 20.25 16.8735 20.25C16.7475 20.25 16.626 20.22 16.4985 20.2125V20.25H12.75Z"
+                    fill="white" />
+                  <path
+                    d="M12.75 20.25V15.75H15.75L12 11.25L8.25 15.75H11.25V20.25H7.5V20.2125C7.374 20.22 7.254 20.25 7.125 20.25C5.63316 20.25 4.20242 19.6574 3.14752 18.6025C2.09263 17.5476 1.5 16.1168 1.5 14.625C1.5 11.739 3.6825 9.387 6.483 9.0645C6.72853 7.78094 7.41367 6.62305 8.42056 5.79C9.42745 4.95694 10.6932 4.50079 12 4.5C13.307 4.50073 14.5729 4.95683 15.5801 5.78987C16.5872 6.6229 17.2726 7.78082 17.5185 9.0645C20.319 9.387 22.4985 11.739 22.4985 14.625C22.4985 16.1168 21.9059 17.5476 20.851 18.6025C19.7961 19.6574 18.3653 20.25 16.8735 20.25C16.7475 20.25 16.626 20.22 16.4985 20.2125V20.25H12.75Z"
+                    fill="url(#paint0_linear_2380_10370)" />
+                  <defs>
+                    <linearGradient id="paint0_linear_2380_10370" x1="2.18687" y1="12.375" x2="22.1075" y2="12.287"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#8F52F3" />
+                      <stop offset="1" stop-color="#00AAE1" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+                Drop files here to upload or <span>choose file</span>
+              </div>
+              <div class="mobile_text">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M18.2649 4.60782C16.0571 2.40001 12.4617 2.40001 10.2563 4.60782L4.13908 10.7203C4.09924 10.7602 4.07815 10.8141 4.07815 10.8703C4.07815 10.9266 4.09924 10.9805 4.13908 11.0203L5.00393 11.8852C5.04346 11.9245 5.09697 11.9466 5.15276 11.9466C5.20854 11.9466 5.26205 11.9245 5.30158 11.8852L11.4188 5.77267C12.1781 5.01329 13.1883 4.59611 14.2617 4.59611C15.3352 4.59611 16.3453 5.01329 17.1024 5.77267C17.8617 6.53204 18.2789 7.5422 18.2789 8.61329C18.2789 9.68673 17.8617 10.6945 17.1024 11.4539L10.868 17.6859L9.85783 18.6961C8.9133 19.6406 7.37815 19.6406 6.43362 18.6961C5.97658 18.2391 5.7258 17.632 5.7258 16.9852C5.7258 16.3383 5.97658 15.7313 6.43362 15.2742L12.6188 9.09142C12.7758 8.93673 12.9821 8.85001 13.2024 8.85001H13.2047C13.425 8.85001 13.6289 8.93673 13.7836 9.09142C13.9406 9.24845 14.025 9.4547 14.025 9.67501C14.025 9.89298 13.9383 10.0992 13.7836 10.2539L8.72815 15.3047C8.6883 15.3445 8.66721 15.3984 8.66721 15.4547C8.66721 15.511 8.6883 15.5649 8.72815 15.6047L9.59299 16.4695C9.63252 16.5089 9.68603 16.531 9.74182 16.531C9.7976 16.531 9.85112 16.5089 9.89065 16.4695L14.9438 11.4164C15.4102 10.95 15.6656 10.3313 15.6656 9.67267C15.6656 9.01407 15.4078 8.39298 14.9438 7.92892C13.9805 6.96564 12.4149 6.96798 11.4516 7.92892L10.8516 8.53126L5.26877 14.1117C4.88986 14.4884 4.5895 14.9366 4.38512 15.4302C4.18074 15.9239 4.0764 16.4532 4.07815 16.9875C4.07815 18.0727 4.50237 19.0922 5.26877 19.8586C6.0633 20.6508 7.10393 21.0469 8.14455 21.0469C9.18518 21.0469 10.2258 20.6508 11.018 19.8586L18.2649 12.6164C19.3313 11.5477 19.9219 10.125 19.9219 8.61329C19.9242 7.09923 19.3336 5.67657 18.2649 4.60782Z"
+                    fill="#C6C6C6" />
+                  <path
+                    d="M18.2649 4.60782C16.0571 2.40001 12.4617 2.40001 10.2563 4.60782L4.13908 10.7203C4.09924 10.7602 4.07815 10.8141 4.07815 10.8703C4.07815 10.9266 4.09924 10.9805 4.13908 11.0203L5.00393 11.8852C5.04346 11.9245 5.09697 11.9466 5.15276 11.9466C5.20854 11.9466 5.26205 11.9245 5.30158 11.8852L11.4188 5.77267C12.1781 5.01329 13.1883 4.59611 14.2617 4.59611C15.3352 4.59611 16.3453 5.01329 17.1024 5.77267C17.8617 6.53204 18.2789 7.5422 18.2789 8.61329C18.2789 9.68673 17.8617 10.6945 17.1024 11.4539L10.868 17.6859L9.85783 18.6961C8.9133 19.6406 7.37815 19.6406 6.43362 18.6961C5.97658 18.2391 5.7258 17.632 5.7258 16.9852C5.7258 16.3383 5.97658 15.7313 6.43362 15.2742L12.6188 9.09142C12.7758 8.93673 12.9821 8.85001 13.2024 8.85001H13.2047C13.425 8.85001 13.6289 8.93673 13.7836 9.09142C13.9406 9.24845 14.025 9.4547 14.025 9.67501C14.025 9.89298 13.9383 10.0992 13.7836 10.2539L8.72815 15.3047C8.6883 15.3445 8.66721 15.3984 8.66721 15.4547C8.66721 15.511 8.6883 15.5649 8.72815 15.6047L9.59299 16.4695C9.63252 16.5089 9.68603 16.531 9.74182 16.531C9.7976 16.531 9.85112 16.5089 9.89065 16.4695L14.9438 11.4164C15.4102 10.95 15.6656 10.3313 15.6656 9.67267C15.6656 9.01407 15.4078 8.39298 14.9438 7.92892C13.9805 6.96564 12.4149 6.96798 11.4516 7.92892L10.8516 8.53126L5.26877 14.1117C4.88986 14.4884 4.5895 14.9366 4.38512 15.4302C4.18074 15.9239 4.0764 16.4532 4.07815 16.9875C4.07815 18.0727 4.50237 19.0922 5.26877 19.8586C6.0633 20.6508 7.10393 21.0469 8.14455 21.0469C9.18518 21.0469 10.2258 20.6508 11.018 19.8586L18.2649 12.6164C19.3313 11.5477 19.9219 10.125 19.9219 8.61329C19.9242 7.09923 19.3336 5.67657 18.2649 4.60782Z"
+                    fill="url(#paint0_linear_2398_31775)" />
+                  <defs>
+                    <linearGradient id="paint0_linear_2398_31775" x1="4.59638" y1="11.9994" x2="19.6271" y2="11.9558"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#8F52F3" />
+                      <stop offset="1" stop-color="#00AAE1" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+                Attach file
+              </div>
+            </div>
+            <button type="submit" class="contacts__form-button main__btn"><span
+                class="text__gradient">Send</span></button>
+          </form>
+          <div class="spinner">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              style="margin: auto; background: rgba(0, 0, 0, 0); display: block; shape-rendering: auto;" width="200px"
+              height="200px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+              <g transform="rotate(0 50 50)">
+                <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#ffffff">
+                  <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.9166666666666666s"
+                    repeatCount="indefinite"></animate>
+                </rect>
+              </g>
+              <g transform="rotate(30 50 50)">
+                <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#ffffff">
+                  <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.8333333333333334s"
+                    repeatCount="indefinite"></animate>
+                </rect>
+              </g>
+              <g transform="rotate(60 50 50)">
+                <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#ffffff">
+                  <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.75s"
+                    repeatCount="indefinite"></animate>
+                </rect>
+              </g>
+              <g transform="rotate(90 50 50)">
+                <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#ffffff">
+                  <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.6666666666666666s"
+                    repeatCount="indefinite"></animate>
+                </rect>
+              </g>
+              <g transform="rotate(120 50 50)">
+                <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#ffffff">
+                  <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.5833333333333334s"
+                    repeatCount="indefinite"></animate>
+                </rect>
+              </g>
+              <g transform="rotate(150 50 50)">
+                <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#ffffff">
+                  <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.5s"
+                    repeatCount="indefinite"></animate>
+                </rect>
+              </g>
+              <g transform="rotate(180 50 50)">
+                <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#ffffff">
+                  <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.4166666666666667s"
+                    repeatCount="indefinite"></animate>
+                </rect>
+              </g>
+              <g transform="rotate(210 50 50)">
+                <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#ffffff">
+                  <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.3333333333333333s"
+                    repeatCount="indefinite"></animate>
+                </rect>
+              </g>
+              <g transform="rotate(240 50 50)">
+                <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#ffffff">
+                  <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.25s"
+                    repeatCount="indefinite"></animate>
+                </rect>
+              </g>
+              <g transform="rotate(270 50 50)">
+                <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#ffffff">
+                  <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.16666666666666666s"
+                    repeatCount="indefinite"></animate>
+                </rect>
+              </g>
+              <g transform="rotate(300 50 50)">
+                <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#ffffff">
+                  <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.08333333333333333s"
+                    repeatCount="indefinite"></animate>
+                </rect>
+              </g>
+              <g transform="rotate(330 50 50)">
+                <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#ffffff">
+                  <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="0s"
+                    repeatCount="indefinite">
+                  </animate>
+                </rect>
+              </g>
+            </svg>
+          </div>
+          <div class="success__block">
+            <div class="success__block-icon">
+              <img src="@img/success.svg" alt="">
+            </div>
+            <div class="success__block-title text__gradient">
+              Thank you for your feedback!
+            </div>
+            <div class="success__block-subtitle">In the near future, our manager will contact you.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

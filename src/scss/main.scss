@@ -46,13 +46,16 @@
 * Подключение стилей отдельных блоков и секций
 */
 @import 'components/header';
-@import 'components/popup';
-@import 'components/checkbox';
-@import 'components/tabs';
-@import 'components/accordion';
+// @import 'components/popup';
+// @import 'components/checkbox';
+// @import 'components/tabs';
+// @import 'components/accordion';
 @import 'components/footer';
 
 @import 'section/hero';
 @import 'section/about';
 @import 'section/values';
 @import 'section/products';
+@import 'section/expertise';
+@import 'section/contacts';
+@import 'section/popup';

@@ -1,7 +1,7 @@
 .wallpapers {
   position: relative;
   padding-top: rem(220);
-  padding-bottom: rem(53);
+  // padding-bottom: rem(53);
 
   @include media-mx(992) {
     padding-top: rem(180);
@@ -91,7 +91,5 @@
     }
   }
 
-  &__footer {
-    margin-top: rem(100);
-  }
+  &__footer {}
 }
