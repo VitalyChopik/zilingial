@@ -112,6 +112,7 @@
     }
 
     &.chatbot {
+      position: absolute;
       right: rem(15);
       bottom: rem(20);
       animation: hero-animate-2 4s linear infinite;
