@@ -208,18 +208,18 @@
 
       span {
         position: relative;
-        color: #00AAE1;
-        -webkit-text-fill-color: #00AAE1;
+        // color: #00AAE1;
+        // -webkit-text-fill-color: #00AAE1;
 
-        &::before {
-          content: "";
-          position: absolute;
-          bottom: 0px;
-          width: 100%;
-          height: 1px;
-          background: #00AAE1;
+        // &::before {
+        //   content: "";
+        //   position: absolute;
+        //   bottom: 0px;
+        //   width: 100%;
+        //   height: 1px;
+        //   background: #00AAE1;
 
-        }
+        // }
       }
 
       .desktop_text {
@@ -235,9 +235,23 @@
         display: flex;
         justify-content: center;
         gap: rem(7);
+        position: relative;
+        width: max-content;
+        margin: 0 auto;
 
         @include media-mx(992) {
           display: none;
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          right: 0;
+          bottom: 0px;
+          width: 80px;
+          height: 1px;
+          background: #00AAE1;
+
         }
       }
 
