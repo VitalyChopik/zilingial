@@ -12,6 +12,10 @@
     }
   }
 
+  &__container {
+    padding: 0;
+  }
+
   &__text-block {
     max-width: rem(613);
     width: 100%;
@@ -29,6 +33,11 @@
       max-width: 270px;
       width: 100%;
       height: 100%;
+
+      @include media-mx(992) {
+        max-width: 100%;
+        background: linear-gradient(90deg, rgba(172, 82, 243, 0.14) 0%, rgba(7, 7, 28, 0.00) 39.02%);
+      }
     }
 
     @include media-mx(992) {
@@ -100,6 +109,7 @@
     @include media-mx(992) {
       padding: 0 rem(10);
       padding-bottom: rem(7);
+      padding-top: rem(30);
     }
   }
 
@@ -148,6 +158,7 @@
     }
 
     @include media-mx(992) {
+      font-size: rem(12);
       text-align: center;
     }
   }

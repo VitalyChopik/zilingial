@@ -19,6 +19,10 @@
     bottom: 0;
 
     transform: translateY(50%);
+
+    @include media-mx(992) {
+      display: none;
+    }
   }
 
   &::before {
@@ -33,7 +37,11 @@
     padding-top: rem(180);
   }
 
-  &__container {}
+  &__container {
+    @include media-mx(992) {
+      padding: 0;
+    }
+  }
 
   &__title {
     text-align: center;
@@ -70,7 +78,7 @@
     overflow: hidden;
 
     @include media-mx(992) {
-      padding: rem(16) rem(5) rem(44);
+      padding: rem(16) rem(20) rem(44);
     }
   }
 
