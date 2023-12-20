@@ -12,9 +12,9 @@
   <title>Zilingial</title>
 
   <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
-  <link rel="stylesheet" href="css/main.min.css?_v=20231219133540">
+  <link rel="stylesheet" href="css/main.min.css?_v=20231220143755">
 
-  <script defer="defer" src="js/main.min.js?_v=20231219133540"></script>
+  <script defer="defer" src="js/main.min.js?_v=20231220143755"></script>
 </head>
 
 <body>
@@ -2673,21 +2673,21 @@
     </div>
     <h3 class="contacts__title">Zilingial</h3>
     <div class="contacts__form" data-aos="fade-up">
-      <form class="contacts__form-content">
+      <form class="contacts__form-content" autocomplete="off">
         <input type="hidden" name="_subject" value="New submission!">
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="Form" value="Contact form">
         <div class="contacts__form-box">
-          <input type="text" name="Name" class="contacts__form-input" required autocomplete="off">
+          <input type="text" name="Name" class="contacts__form-input required" autocomplete="off">
           <span class="contacts__form-label"><img src="images/icons/contact_user.svg" alt="">Your Name <sup>*</sup></span>
         </div>
         <div class="contacts__form-box">
-          <input type="email" name="E-mail" class="contacts__form-input" required autocomplete="off">
+          <input type="email" name="E-mail" class="contacts__form-input required" autocomplete="off">
           <span class="contacts__form-label"><img src="images/icons/contact_email.svg" alt="">Your E-mail
             <sup>*</sup></span>
         </div>
-        <div class="contacts__form-box">
-          <textarea name="Message" class="contacts__form-input" autocomplete="off"></textarea>
+        <div class="contacts__form-box textarea">
+          <textarea name="Message" class="contacts__form-input contacts__form-textarea" autocomplete="off"></textarea>
           <span class="contacts__form-label"><img src="images/icons/contact_message.svg" alt="">Message</span>
         </div>
         <button type="submit" class="main__btn contacts__form-button">Send</button>
@@ -2782,7 +2782,8 @@
     </ul>
     <a href="#footer" class="main__btn footer__btn"><span>Contact us</span></a>
   </div>
-  <span class="footer__copy">Copyright © 2023</span>
+  <span class="footer__copy">AIOLOU & PANAGIOTI DIOMIDOUS, KATHOLIKI 3020, LIMASSOL, CYPRUS
+    Copyright © 2023 <br>Copyright © 2023</span>
 </footer>
     <div class="popup">
   <div class="popup__wrapper"></div>
@@ -2804,23 +2805,23 @@
         </div>
         <h2 class="text__gradient popup__title">Let's work together</h2>
         <div class="popup__form">
-          <form class="contacts__form-content" enctype="multipart/form-data">
+          <form class="contacts__form-content" enctype="multipart/form-data" autocomplete="off">
             <input type="hidden" name="_subject" value="New submission!">
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="Form" value="Contact form">
             <input type="file" name="attachment" class="contacts__form-file-hidden" id="fileInput">
             <div class="contacts__form-box">
-              <input type="text" name="Name" class="contacts__form-input" required autocomplete="off">
+              <input type="text" name="Name" class="contacts__form-input required" autocomplete="off">
               <span class="contacts__form-label"><img src="images/icons/contact_user.svg" alt="">Your Name
                 <sup>*</sup></span>
             </div>
             <div class="contacts__form-box">
-              <input type="email" name="E-mail" class="contacts__form-input" required autocomplete="off">
+              <input type="email" name="E-mail" class="contacts__form-input required" autocomplete="off">
               <span class="contacts__form-label"><img src="images/icons/contact_email.svg" alt="">Your E-mail
                 <sup>*</sup></span>
             </div>
-            <div class="contacts__form-box">
-              <textarea name="Message" class="contacts__form-input" autocomplete="off"></textarea>
+            <div class="contacts__form-box textarea">
+              <textarea name="Message" class="contacts__form-input contacts__form-textarea" autocomplete="off"></textarea>
               <span class="contacts__form-label"><img src="images/icons/contact_message.svg" alt="">Message</span>
             </div>
             <div class="contacts__form-file" id="dropArea">
@@ -2836,7 +2837,7 @@
                     </linearGradient>
                   </defs>
                 </svg>
-                Drop files here to upload or <span>choose file</span>
+                Drop files here to upload or choose file
               </div>
               <div class="mobile_text">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
