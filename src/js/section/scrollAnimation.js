@@ -26,27 +26,25 @@ const scrollAnimation = () => {
     })
   }
   const values = document.querySelector('.values');
-  if (values) {
-    const valuesBoxs = document.querySelectorAll('.values__box');
+  if (window.innerWidth > 992) {
+    if (values) {
+      const valuesBoxs = document.querySelectorAll('.values__box');
 
-    valuesBoxs.forEach(item => {
-      let valuesAnim = gsap.timeline({
-        scrollTrigger: {
-          trigger: values,
-          start: () => `top top`,
-          end: () => `bottom bottom`,
-          markers: false,
-          scrub: true,
-          markers: false,
-        }
-      });
-      const bg = item.querySelector('.values__box-bg');
-      valuesAnim.fromTo(bg, { width: 0, height: 0 }, { width: 130, height: 130 });
-    })
+      valuesBoxs.forEach(item => {
+        let valuesAnim = gsap.timeline({
+          scrollTrigger: {
+            trigger: values,
+            start: () => `top top`,
+            end: () => `bottom bottom`,
+            markers: false,
+            scrub: true,
+            markers: false,
+          }
+        });
+        const bg = item.querySelector('.values__box-bg');
+        valuesAnim.fromTo(bg, { width: 0, height: 0 }, { width: 130, height: 130 });
+      })
+    }
   }
-
-
-
-
 }
 export default scrollAnimation;

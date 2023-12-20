@@ -171,6 +171,10 @@
         bottom: 14px;
         right: 11px;
         z-index: 1;
+
+        @include media-mx(992) {
+          display: none;
+        }
       }
     }
 
@@ -256,6 +260,11 @@
       width: 20px;
       height: 20px;
       opacity: 0;
+    }
+
+    @include media-mx(992) {
+      resize: none;
+      overflow: hidden;
     }
   }
 

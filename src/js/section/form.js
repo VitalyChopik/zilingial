@@ -3,6 +3,7 @@ const formBlock = (formBlock) => {
   const form = formBlock.querySelector('.contacts__form-content');
   const formSubmit = form.querySelector('.contacts__form-button');
   const inputsBox = form.querySelectorAll('.contacts__form-box');
+  const adaptiveTextarea = formBlock.querySelector('textarea');
   form.addEventListener('submit', (e) => {
     e.preventDefault();
     if (validateInputs(inputsBox)) {
@@ -53,7 +54,20 @@ const formBlock = (formBlock) => {
       });
 
   }
+  function autoResize(textarea) {
+    if (window.innerWidth < 992) {
+      textarea.style.height = 'auto';
+      textarea.style.height = textarea.scrollHeight + 'px';
+    }
+  }
 
+  adaptiveTextarea.addEventListener('input', function () {
+    autoResize(adaptiveTextarea);
+  });
+
+  window.addEventListener('resize', function () {
+    autoResize(adaptiveTextarea);
+  });
 }
 export default formBlock;
 

@@ -207,7 +207,8 @@
       svg {}
 
       span {
-        position: relative;
+
+        // text-decoration: underline;
         // color: #00AAE1;
         // -webkit-text-fill-color: #00AAE1;
 
@@ -239,6 +240,9 @@
         width: max-content;
         margin: 0 auto;
 
+
+
+
         @include media-mx(992) {
           display: none;
         }
@@ -250,8 +254,7 @@
           bottom: 0px;
           width: 80px;
           height: 1px;
-          background: #00AAE1;
-
+          background: linear-gradient(90deg, #2992E7 0%, #01AAE2 100%);
         }
       }
 
